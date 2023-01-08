@@ -1,0 +1,3 @@
+{
+  "app": "node --es-module-specifier-resolution=node --loader ts-node/esm ./index.ts"
+}
