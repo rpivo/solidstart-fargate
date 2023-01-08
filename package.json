@@ -1,5 +1,18 @@
 {
   "name": "solidstart-fargate",
+  "keywords": [
+    "solid",
+    "solid-start",
+    "aws",
+    "cdk",
+    "cloudformation",
+    "ecs",
+    "fargate"
+  ],
+  "description": "Small template to quickly deploy a solid-start app to AWS ECS using Fargate",
+  "license": "MIT",
+  "author": "ryan pivovar<ryanpivovar@gmail.com>",
+  "url": "https://github.com/rpivo/solidstart-fargate",
   "scripts": {
     "dev": "solid-start dev",
     "build:src": "solid-start build",
