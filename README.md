@@ -114,6 +114,8 @@ npm run updateService
 
 `deploy:image` builds and deploys a new image, and `updateService` will force Fargate to create a new service using the latest deployed image. This puts the new service into rotation within the cluster while also taking down the old service.
 
+Note that while the `updateService` script should run and exit quickly, the ECS cluster will likely take at least a few minutes before the new service is pushed into rotation and the old service is taken down. You can monitor the status of this from the dashboard, or use the AWS cli `services-stable` script to monitor progress.
+
 ### Destroying The Stack
 
 To destroy all resources:
